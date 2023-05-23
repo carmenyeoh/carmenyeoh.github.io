@@ -1,0 +1,95 @@
+﻿<HTML>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+    <style>
+        body {
+            background: #e7ffe1;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .panel-container {
+            font-size: 150%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+            padding-left: 200px;
+            margin: 5% auto 2% auto;
+        }
+
+            .panel-container strong {
+                line-height: 20px;
+            }
+
+        .btn {
+            background-color: #228b22;
+            color: white;
+            border: 0;
+            border-radius: 4px;
+            padding: 12px 30px;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                outline: 0;
+                background-color: black;
+            }
+
+       .footer {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="panel" class="panel-container">
+        <div style="margin-bottom: 40px;">
+            <img style="width: 25px;" src="https://www.vippng.com/png/full/443-4432578_happy-face-green-smile-icon-png.png" alt="" />
+            &nbsp;<strong>Which of the following you are satisfied with?</strong>
+        </div>
+        <br>
+        <div style="font-size: 20px; padding-left: 35px;">
+            <div style="border: 2px solid #73AD21; border-radius: 10px; padding: 10px; margin-bottom: 15px; background-color: white; width: 40%">
+                <input type="checkbox" id="listing1" name="listing1">&nbsp;
+                <label for="listing1">Friendly service</label><br>
+            </div>
+            <div style="border: 2px solid #73AD21; border-radius: 10px; padding: 10px; margin-bottom: 15px; background-color: white; width: 40%">
+                <input type="checkbox" id="listing2" name="listing2">&nbsp;
+                <label for="listing2">Timely delivery</label><br>
+            </div>
+            <div style="border: 2px solid #73AD21; border-radius: 10px; padding: 10px; margin-bottom: 15px; background-color: white; width: 40%">
+                <input type="checkbox" id="listing3" name="listing3">&nbsp;
+                <label for="listing3">Professional advice</label><br>
+            </div>
+            <div style="border: 2px solid #73AD21; border-radius: 10px; padding: 10px; margin-bottom: 15px; background-color: white; width: 40%">
+                <input type="checkbox" id="listing4" name="listing4">&nbsp;
+                <label for="listing4">Prompt response</label><br>
+            </div>
+            <div style="border: 2px solid #73AD21; border-radius: 10px; padding: 10px; margin-bottom: 15px; background-color: white; width: 80%">
+                <input type="checkbox" id="listing5" name="listing5">&nbsp;
+                <label for="listing5">Others: </label>
+                <label for="lname"></label>
+                <input type="text" id="lname" name="lname" style="width: 80%; height:30px">
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="footer">
+        <button class="btn" onclick="history.back()">Back</button>&nbsp;
+        <a href="Success.html"><button class="btn">Submit</button></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</HTML>

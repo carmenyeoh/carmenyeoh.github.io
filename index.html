@@ -1,0 +1,181 @@
+﻿<HTML>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey</title>
+    <style>
+        .container {
+            flex-direction: column;
+            padding: 30px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .companyLogo {
+            background-color: #ffffff;
+            border: 2px solid lightgray;
+            margin-top: 1em;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: rgb(64, 64, 64);
+        }
+
+        .contentSection {
+            background-color: rgb(211, 255, 167);
+            padding: 25px;
+        }
+
+        .submitButtonSection {
+            margin-top: 3em;
+            text-align: center;
+        }
+
+        .surveyMessageSection {
+            margin-top: 1%;
+        }
+
+        .surveyMessage {
+            text-align: justify;
+        }
+
+        .headerSection {
+            background-color: #bde0fe;
+            height: fit-content;
+            padding: 10px;
+        }
+
+        .ratingSection {
+            padding: 10px;
+        }
+
+        .buttonSection, .companyLogo, .surveyMessageSection, .contentSection, .content {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .buttonSection, .content, .surveyMessageSection, .companyLogo {
+            width: 80%;
+        }
+
+            .content h4 {
+                padding: 10px 10px 10px 0px;
+            }
+
+        .companyLogo, .buttonSection {
+            text-align: center;
+        }
+
+        .ratingSection td {
+            vertical-align: middle !important;
+            min-width: 100px !important;
+            max-width: 100px !important;
+        }
+
+        .ratingSection table {
+            background-color: white !important;
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+        }
+
+        .ratingRepresentation, .content h4 {
+            color: white;
+        }
+
+        .rate {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: left;
+        }
+
+            .rate:not(:checked) > label {
+                width: 1em;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                font-size: 30px;
+                color: #ccc;
+            }
+
+            .rate:not(:checked) > input {
+                position: absolute;
+                top: -9999px;
+            }
+
+            .rate:not(:checked) > label:before {
+                content: '★ ';
+            }
+
+            .rate > input:checked ~ label {
+                color: #ffc700;
+            }
+
+            .rate:not(:checked) > label:hover,
+            .rate:not(:checked) > label:hover ~ label {
+                color: #deb217;
+            }
+
+            .rate > input:checked + label:hover,
+            .rate > input:checked + label:hover ~ label,
+            .rate > input:checked ~ label:hover,
+            .rate > input:checked ~ label:hover ~ label,
+            .rate > label:hover ~ input:checked ~ label {
+                color: #c59b08;
+            }
+
+            .rate input[type="radio"] + label:before {
+                vertical-align: middle !important;
+            }
+
+            .rate input[type="radio"]:checked + label:before {
+                content: '★ ' !important;
+                color: #ffc700 !important;
+            }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: 0;
+            border-radius: 4px;
+            padding: 12px 30px;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                outline: 0;
+                background-color: #228b22;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="headerSection">
+            <div>Client satisfaction survey</div>
+            <div class="companyLogo">
+                <h1>PETER NG & CO</h1>
+                <h4>Chartered Accountants</h4>
+            </div>
+            <div class="surveyMessageSection">
+                <div class="surveyMessage">
+                    <h5>Dear Amy,</h5>
+                    <h5>
+                        We have recently completed the audit of your company <b>ABC TRADING SDN BHD</b> for Y/E <u>31<sup>st</sup> December 2022</u>.
+                    </h5>
+                    <h5>
+                        <i>
+                            In order for us to serve you better, we highly appreciate if you could spare 1 minute to fill up the following short survey.
+                        </i>
+                    </h5>
+                </div>
+            </div>
+            <div class="buttonSection">
+                <hr />
+                <a href="survey.html"><button type="btn" class="btn btn-primary">Start</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</HTML>
